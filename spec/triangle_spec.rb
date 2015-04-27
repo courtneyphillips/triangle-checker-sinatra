@@ -26,7 +26,7 @@ describe('Triangle') do
     end
   end
 
-  describe("#scalene?") do
+  describe('#scalene?') do
     it('states when given sides form a scalene triangle') do
       triangle = Triangle.new(1, 2, 3)
       expect(triangle.scalene?()).to(eq(true))
@@ -38,10 +38,32 @@ describe('Triangle') do
     end
   end
 
-    describe('#triangle?') do
+  describe('#triangle?') do
     it('states when values do not create triangle') do
       triangle = Triangle.new(8, 2, 2)
       expect(triangle.triangle?()).to(eq(false))
+    end
+
+    it('states when values create triangle') do
+      triangle = Triangle.new(2, 2, 2)
+      expect(triangle.triangle?()).to(eq(TRUE))
+    end
+  end
+
+  describe('#triangle_type') do
+    it('returns the type of the triangle when it\'s equilateral') do
+      triangle = Triangle.new(2, 2, 2)
+      expect(triangle.get_type()).to(eq("Equilateral"))
+    end
+
+    it('returns the type of the triangle when it\'s isosceles') do
+      triangle = Triangle.new(3, 2, 2)
+      expect(triangle.get_type()).to(eq("Isosceles"))
+    end
+
+    it('returns the type of the triangle when it\'s scalene') do
+      triangle = Triangle.new(2, 1, 3)
+      expect(triangle.get_type()).to(eq("Scalene"))
     end
   end
 end

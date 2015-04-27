@@ -32,4 +32,16 @@ class Triangle
     end
     true
   end
+
+  define_method(:get_type) do
+    if   !self.triangle?
+      "This isn't a triangle!"
+    elsif self.equilateral?
+      "Equilateral"
+    elsif self.isosceles?
+      "Isosceles"
+    elsif self.scalene?
+      "Scalene"
+    end
+  end
 end
