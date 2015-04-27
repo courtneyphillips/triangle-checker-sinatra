@@ -17,6 +17,19 @@ class Triangle
       return true
     end
     false
-  end 
+  end
 
+  define_method(:scalene?) do
+    if @a.!=(@b) && @a.!=(@c) && @c.!=(@b)
+      return true
+    end
+    false
+  end
+
+  define_method(:triangle?) do
+    if @a.>(@b.+(@c)) || @b.>(@a.+(@c)) || @c.>(@a.+(@b))
+      return false
+    end
+    true
+  end
 end
