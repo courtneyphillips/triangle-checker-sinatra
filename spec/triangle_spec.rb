@@ -45,9 +45,10 @@ describe('Triangle') do
     end
 
     it('states when values create triangle') do
-      triangle = Triangle.new(2, 2, 2)
+      triangle = Triangle.new(1, 2, 3)
       expect(triangle.triangle?()).to(eq(TRUE))
     end
+
   end
 
   describe('#triangle_type') do
