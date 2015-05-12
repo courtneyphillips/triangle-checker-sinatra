@@ -4,7 +4,7 @@
 
 ## Synopsis
 
-Triangle Checker is an exciting app that informs you of the type of triangle your three values will create. Will it be equilateral? Isosceles?! Scalene?! Or not a triangle at all?
+Triangle Checker is an exciting app that informs you of the type of triangle your three values will create. Will it be equilateral? Isosceles?! Scalene?! Or not a triangle at all? Crafted as part of the Spring 2015 Ruby course curriculum at [Epicodus](https://www.epicodus.com/).
 
 ## Installation
 
