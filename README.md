@@ -4,7 +4,7 @@
 
 ## Synopsis
 
-Triangle Checker is an exciting app that informs you of the type of triangle your three values will create. Will it be equilateral? Isosceles?! Scalene?! Or not a triangle at all? Crafted as part of the Spring 2015 Ruby course curriculum at [Epicodus](https://www.epicodus.com/).
+Triangle Checker is an exciting app that informs you of the type of triangle (if any) three given values will create. Will it be equilateral? Isosceles?! Scalene?! Or not a triangle at all? This riveting program was crafted by [Courtney Phillips](https://github.com/courtneyphillips) and [Garrett Olson](https://github.com/garedean) as part of the Spring 2015 Ruby course curriculum at [Epicodus](https://www.epicodus.com/).
 
 ## Installation
 
@@ -14,10 +14,13 @@ Triangle Checker uses the following gems:
   - Sinatra
   - RSpec
 
+running `$ gem install bundle` from the terminal will install all necessary gems. 
   
 ## Tests
 
-  Both method and integration tests for Word Frequency utilize the RSpec. Simply run `gem install rspec`, if it's not already installed, and then the command `rspec`, while located in the project's file.
+Tests for Triangle Checker utilize RSpec and Capybara. If you haven't already bundle installed as detailed above, simply run `gem install rspec`, and/or `$ gem install capybara` to gather the necessary gems.
+
+Run `$ rspec` within the terminal to run tests. 
 
 
 ## License
